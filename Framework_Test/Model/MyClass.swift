@@ -8,13 +8,15 @@
 
 import Foundation
 
-class MyClass
+public class MyClass
 {
-    var var1: Int = 1
-    var var2: String = "2"
+    private var var1: Int = 1
+    private var var2: String = "2"
     
-    func show()
+    public func show()
     {
         print(var1, var2)
     }
+    
+    public init() {}
 }

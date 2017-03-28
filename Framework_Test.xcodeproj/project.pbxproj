@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		061D58821E8AD75900A89FFA /* Framework_Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 061D58801E8AD75900A89FFA /* Framework_Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0698E4D01E8AD8940094FAF0 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0698E4CF1E8AD8940094FAF0 /* MyClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		061D587D1E8AD75900A89FFA /* Framework_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		061D58801E8AD75900A89FFA /* Framework_Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Framework_Test.h; sourceTree = "<group>"; };
 		061D58811E8AD75900A89FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0698E4CF1E8AD8940094FAF0 /* MyClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyClass.swift; path = Model/MyClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				061D58801E8AD75900A89FFA /* Framework_Test.h */,
 				061D58811E8AD75900A89FFA /* Info.plist */,
+				0698E4CF1E8AD8940094FAF0 /* MyClass.swift */,
 			);
 			path = Framework_Test;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 					061D587C1E8AD75900A89FFA = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = A7CL5SKGAR;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0698E4D01E8AD8940094FAF0 /* MyClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +247,7 @@
 		061D58861E8AD75900A89FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A7CL5SKGAR;
@@ -254,6 +260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.akozhur.Framework-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +268,7 @@
 		061D58871E8AD75900A89FFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A7CL5SKGAR;
@@ -296,6 +304,7 @@
 				061D58871E8AD75900A89FFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

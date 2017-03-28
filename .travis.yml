@@ -17,3 +17,7 @@ before_install:
 before_deploy:
 - carthage build --no-skip-current
 - carthage archive Framework_Test
+skip_cleanup: true
+on:
+  repo: repo/repo
+  tags: true
